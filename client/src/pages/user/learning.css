@@ -1,0 +1,39 @@
+.learn-item{
+    
+
+}
+
+.learn-item2 {
+   
+   
+   
+
+}
+
+
+
+
+
+
+.learn-item3 {
+    
+    /* Make learn item 3 start from column 1 and span 2 columns */
+}
+
+
+.learn-item4{
+    
+}
+
+
+
+.learn-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  
+   border-radius: 20px;
+   background-color: black;
+}
+body{
+    background-color: black;
+}

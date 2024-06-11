@@ -1,0 +1,11 @@
+.cointainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.right{
+    margin-right:auto;
+}
+.left{
+    margin-left: auto;
+}

@@ -1,0 +1,75 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.photos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    padding: 0px;
+    margin: 5px ;
+    margin-left: 10;
+    margin-right: 10px;
+    height: 5vh;
+     width: 100%; 
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+
+.stack1{
+    padding: 0px;
+    margin: 5px ;
+    margin-left: 10;
+    margin-right: 10px;
+    height: 35vh;
+     width: 100%; 
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.earth {
+    width: 100%; /* Make the image width fill the container */
+    height: 100%; /* Make the image height fill the container */
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+
+.stack2{
+    
+    padding: 0px;
+    margin: 5px ;
+    margin-left: 10;
+    margin-right: 10px;
+    height: 40vh;
+     width: 100%; 
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+
+
+  
+
+  

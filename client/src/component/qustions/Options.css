@@ -1,0 +1,21 @@
+.options-container {
+  margin-top: -10rem;
+  margin-left: 15rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 200vh;
+}
+
+.options-container h2 {
+  color: #fff;
+  font-weight: 250;
+  display: inline-block;
+  width: 35%;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  
+}
