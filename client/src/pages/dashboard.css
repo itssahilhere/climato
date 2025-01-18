@@ -1,93 +1,123 @@
-.grid-item1{
-    background-color: brown;
-    z-index: 66;
+:root {
+  --primary-font-color: #faf3dd;
+}
 
+a {
+  position: relative;
+  z-index: -4;
+}
+
+.dashboard {
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0 9rem;
+  height: 100vh;
+  overflow: hidden;
+  color: var(--primary-font-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-font-color) !important;
+}
+
+.grid-item1 {
+  z-index: 66;
 }
 
 .grid-item2 {
-    background-color: rgb(212, 226, 19);
-    grid-column: span 2; /* Make grid item 2 span across 2 columns */
-    background-image: url('https://s3-alpha-sig.figma.com/img/17ff/2649/4a0ccfb7c43ce6442191104372730f01?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F2BzSyjuNIk-p15skJVrTqPcq~m0HthFkb6iNcSyfeCy0Jx2Z6YqalYVChsOPhKjImk8XYmXs6DF5sQTSheZ1QBzi3RTxdI-R0u5VpDlwD526hBTSb7FKMf4RTaPKYfkjyCB-nLhlVYG-TzdeJz5nWBorGm1d90NF~4rHBBlr6FOE8pS5tGO61S5BphQst0~chxLi7Bi7LZf6lHJSAnsWH9cLhy7feJ4Nz-nJS2QJVxSxzrK6Z7Shx-mcgNQ9IYHKET8sYwLMh-ZdHzJB5kdDwXmFoQzjRYdGu9HV1UabPqLQF3VxPpY94Pgd3mUPP27Dqu-83ZyWgPaoC2JkKLYww__');
-    background-size: cover;
-    border-radius: 50px;
-    display: flex;
-   
-   align-items:end;
-   justify-content: start;
-   color: rgb(255, 255, 255);
-   font-size: 70px;
-   z-index: 66;
-   
-
+  grid-column: span 2; /* Make grid item 2 span across 2 columns */
+  z-index: 66;
 }
-
-
-
-a{
-    position: relative;
-    z-index: -4;
-}
-
 
 .grid-item3 {
-    display: flex;
-    opacity: 0.4;
-   align-items:end;
-   color: rgb(255, 255, 255);
-   font-size: 70px;
-   justify-content: start;
-    grid-column: 1/2 ; /* Make grid item 3 start from column 1 and span 2 columns */
-    background-image: url('../assets/waterfall.png');
-    z-index: 66;
+  display: flex;
+  position: relative;
+  align-items: end;
+  font-size: 70px;
+  justify-content: start;
+  grid-column: 1/2; /* Make grid item 3 start from column 1 and span 2 columns */
+  background: #1a1a1a;
+  background-image: url("../assets/history.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 66;
+  overflow: hidden; /* Ensure the pseudo-element stays within bounds */
+  box-shadow: inset 4px -10px 12px rgba(0, 0, 0, 0.5);
 }
 
-
-.grid-item4{
-    background-color: rgb(212, 226, 19);
-    grid-column: span 2; /* Make grid item 2 span across 2 columns */
-    background-image: url('../assets/maps.jpg');
-    background-size: cover;
-    border-radius: 50px;
-    display: flex;
-    
-   align-items:end;
-   justify-content: start;
-   color: rgb(255, 255, 255);
-   font-size: 70px;
-   z-index: 66;
+.grid-item3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(22, 21, 21, 0.6);
+  z-index: 1; /* Ensure it sits above the background image */
 }
 
+.grid-item4 {
+  grid-column: span 2; /* Make grid item 2 span across 2 columns */
+  background-image: url("../assets/maps.jpg");
+  background-size: cover;
+  display: flex;
 
+  align-items: end;
+  justify-content: start;
+  z-index: 66;
+  box-shadow: inset 2px -10px 12px rgba(0, 0, 0, 0.5);
+}
 
-.grid-container{
-    display: grid;
+.grid-container {
+  display: grid;
   grid-template-columns: auto auto auto;
   height: 100vh;
-   border-radius: 20px;
-   z-index: 66;
+  border-radius: 20px;
+  z-index: 66;
 }
 
-.leader{
-    display: grid;
-    
-  grid-template-columns: auto auto;
+.leader {
+  display: grid;
+
+  grid-template-rows: auto auto;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-radius: 5px;
+  top: 90%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--primary-font-color);
+  width: 0%;
+  transition: width 300ms ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
 }
 
 /* Add this CSS to your dashboard.css file */
 
 /* Style for the profile picture */
 .profile-pic {
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
-    border-radius: 50%; /* Make it circular */
-    margin-bottom: 10px; /* Add some space below the profile picture */
-  }
-  
-  /* Style for the user's name */
-  .user-name {
-    font-size: 18px; /* Adjust the font size as needed */
-    font-weight: bold; /* Make the name bold */
-    color: #333; /* Set the color of the name */
-    text-align: center; /* Center align the name */
-  }
-  
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make it circular */
+  margin-bottom: 10px; /* Add some space below the profile picture */
+}
+
+/* Style for the user's name */
+.user-name {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the name bold */
+  color: #333; /* Set the color of the name */
+  text-align: center; /* Center align the name */
+}
