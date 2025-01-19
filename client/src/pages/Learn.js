@@ -32,19 +32,26 @@ function Learn() {
     { image: blog4, desc: "How to get rid of your old phone in 2024" },
   ];
 
-    return (
-        <div className='d-flex'>
-
-
-
-            <div className='p-3 w-100'>
-
-                <div className='text-white d-flex bg-dark rounded-3xl justify-content-between px-3 mb-3 mx-2' style={{ height: "8vh" }}>
-
-                    <button className='d-flex align-items-center' onClick={() => setShow(prev => !prev)}>
-                        {!show ? <img src="https://cdn1.iconfinder.com/data/icons/heroicons-ui/24/menu-512.png" width={50} />
-                            : <ArrowArcLeft size={50} />}
-                    </button>
+  return (
+    <div className="d-flex">
+      <div className="p-3 w-100">
+        <div
+          className="text-white d-flex bg-dark rounded-3xl justify-content-between px-3 mb-3 mx-2"
+          style={{ height: "8vh" }}
+        >
+          <button
+            className="d-flex align-items-center"
+            onClick={() => setShow((prev) => !prev)}
+          >
+            {!show ? (
+              <img
+                src="https://cdn1.iconfinder.com/data/icons/heroicons-ui/24/menu-512.png"
+                width={50}
+              />
+            ) : (
+              <ArrowArcLeft size={50} />
+            )}
+          </button>
 
           <div className="h3 align-self-center m-0 p-0">Printopher</div>
 
@@ -57,28 +64,45 @@ function Learn() {
           </div>
         </div>
 
-
-                <div className='d-flex'>
-
-
-                    {show && <div className='bg-dark m-3 text-white h4 d-flex flex-column rounded-3xl'>
-
-                    <div className='my-auto p-5' onClick={() => navigate('/learn')}>Learn</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/order')}>Ecozones</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/dashboard')}>Dashboard</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/leaderboard')}>Leaderboards</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/reward')}>Rewards</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/history')}> Pending Order Status</div>
-                    </div>}
-
-                    <div className='bg-dark w-100 p-5 m-3 rounded-3xl d-flex flex-wrap' style={{ minHeight: "92vh" }}>
-                        {blogs?.map(item => <Card
-                            image={item.image}
-                            description={item.desc}
-                        />)}
-                    </div>
-                </div>
+        <div className="d-flex">
+          {show && (
+            <div className="bg-dark m-3 text-white h4 d-flex flex-column rounded-3xl">
+              <div className="my-auto p-5" onClick={() => navigate("/learn")}>
+                Learn
+              </div>
+              <div className="my-auto p-5" onClick={() => navigate("/order")}>
+                Ecozones
+              </div>
+              <div
+                className="my-auto p-5"
+                onClick={() => navigate("/dashboard")}
+              >
+                Dashboard
+              </div>
+              <div
+                className="my-auto p-5"
+                onClick={() => navigate("/leaderboard")}
+              >
+                Leaderboards
+              </div>
+              <div className="my-auto p-5" onClick={() => navigate("/reward")}>
+                Rewards
+              </div>
+              <div className="my-auto p-5" onClick={() => navigate("/history")}>
+                {" "}
+                Pending Order Status
+              </div>
             </div>
+          )}
+
+          <div
+            className="bg-dark w-100 p-5 m-3 rounded-3xl d-flex flex-wrap"
+            style={{ minHeight: "92vh" }}
+          >
+            {blogs?.map((item) => (
+              <Card image={item.image} description={item.desc} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
