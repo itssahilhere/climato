@@ -10,7 +10,7 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "Ecozones",
+    title: "Browse Print Stores",
     path: "/eco-zones",
     //icon: <Leaf size={32} />,
     cName: "nav-text",
@@ -22,7 +22,7 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "LeaderBoards",
+    title: "Order History",
     path: "/leader-board",
     //icon: <Crown size={32} />,
     cName: "nav-text",

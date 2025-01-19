@@ -8,10 +8,10 @@ function History() {
     const navigate = useNavigate()
 
     const histories = [
-        { title: "Old mobile phone", subtitle: "iPhone 12", date: "17th March", approved: true },
-        { title: "Broken laptop", subtitle: "MacBook Pro", date: "16th March", approved: false },
-        { title: "Mouse", subtitle: "Hp", date: "19th February", approved: true },
-        { title: "Tech accessories", subtitle: "AirPods Pro", date: "20th January", approved: false }
+        { title: "Dsa Notes", subtitle: "Semester 5 black and white", date: "17th March", approved: true },
+        { title: "Organiser Cse", subtitle: "Semester 6 important", date: "16th March", approved: false },
+        { title: "tshirt", subtitle: "Colour-block", date: "19th February", approved: true },
+        { title: "Flyers", subtitle: "High quality", date: "20th January", approved: false }
     ];
     
 
@@ -41,18 +41,17 @@ function History() {
                     {show && <div className='bg-dark m-3 text-white h4 d-flex flex-column rounded-3xl'>
 
                     <div className='my-auto p-5' onClick={() => navigate('/learn')}>Learn</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/order')}>Ecozones</div>
+                        <div className='my-auto p-5' onClick={() => navigate('/order')}>Browse Print Stores</div>
                         <div className='my-auto p-5' onClick={() => navigate('/dashboard')}>Dashboard</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/leaderboard')}>Leaderboards</div>
+                        <div className='my-auto p-5' onClick={() => navigate('/leaderboard')}>Order History</div>
                         <div className='my-auto p-5' onClick={() => navigate('/reward')}>Rewards</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/history')}>Settings</div>
+                        <div className='my-auto p-5' onClick={() => navigate('/history')}> Pending Order Status</div>
                     </div>}
 
                     <div className='bg-dark w-100 p-5 m-3 rounded-3xl' style={{ minHeight: "92vh" }}>
                         {
                             histories?.map((item, idx) => <div key={idx} className='border rounded-3xl p-4 my-3 d-flex justify-content-between align-items-center'>
-                                <img src={"https://picsum.photos/200/200?id=" + idx} width={100} className='rounded-3xl' />
-
+                                {item.approved? <img src={"https://cdn-icons-png.flaticon.com/128/18609/18609783.png"} width={100} className='rounded-3xl' /> : <img src={"https://cdn-icons-png.flaticon.com/128/17762/17762877.png" } width={100} className='rounded-3xl' />}
                                 <div className='flex-fill m-3 text-white'>
                                     <h3 className='h3'>{item.title}</h3>
                                     <h4 className='h5 opacity-50'>{item.subtitle}</h4>

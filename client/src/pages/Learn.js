@@ -60,7 +60,7 @@ function Learn() {
                         <div className='my-auto p-5' onClick={() => navigate('/dashboard')}>Dashboard</div>
                         <div className='my-auto p-5' onClick={() => navigate('/leaderboard')}>Leaderboards</div>
                         <div className='my-auto p-5' onClick={() => navigate('/reward')}>Rewards</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/history')}>Settings</div>
+                        <div className='my-auto p-5' onClick={() => navigate('/history')}> Pending Order Status</div>
                     </div>}
 
                     <div className='bg-dark w-100 p-5 m-3 rounded-3xl d-flex flex-wrap' style={{ minHeight: "92vh" }}>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { } from "react";
 
 
 const Card = ({ image, read, description }) => {
@@ -24,7 +24,7 @@ const Card = ({ image, read, description }) => {
         }}>{read}</p>
 
 
-        <img src={image} className="rounded-3xl h-100 w-100" />
+        <img src={image} alt="img" className="rounded-3xl h-100 w-100" />
         <p className=" mt-4 m-2 p-2 text-md bottom-3 left-3 absolute text-white text-wrap">{description}</p>
    
     </div>
