@@ -8,11 +8,9 @@ a {
 }
 
 .dashboard {
-  font-family: "IBM Plex Mono", monospace;
-  margin: 0 9rem;
-  height: 100vh;
+  /* font-family: "IBM Plex Mono", monospace; */
   overflow: hidden;
-  color: var(--primary-font-color) !important;
+  /* color: var(--primary-font-color) !important; */
 }
 
 .text-primary {
@@ -84,6 +82,7 @@ a {
 
 .nav-item {
   position: relative;
+  color: inherit;
 }
 
 .nav-item::after {

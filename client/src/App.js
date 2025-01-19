@@ -17,10 +17,10 @@ import QuestionContainer from "./component/qustions/QuestionContainer.js";
 function App() {
   return (
     <div className='bg-black '>
-     
-    
+      
+     <div className="body-container my-0 mx-[9rem]">
+
       <Routes>
-        
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>I
         <Route path="/recycler/rlogin" element={<RSignIn />}></Route>
@@ -35,6 +35,7 @@ function App() {
         <Route path="/order" element={<OrderForm/>}></Route>
         <Route path="/reward" element={<Reward/>}></Route>
       </Routes>
+     </div>
     
     </div>
   );
