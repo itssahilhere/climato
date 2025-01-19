@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-font-color: #faf3dd;
+}
 
-*{
-    font-family: "IBM Plex Mono", monospace !important;
+* {
+  font-family: "IBM Plex Mono", monospace !important;
+  color: var(--primary-font-color);
+}
+
+body {
+  margin: 0 9rem;
+  height: 100vh;
 }

@@ -10,7 +10,7 @@ function LeaderBoard() {
     <div className="d-flex">
       <div className="p-3 w-100">
         <div
-          className="text-white d-flex bg-dark rounded-3xl justify-content-between px-3 mb-3 mx-2"
+          className="text-white d-flex bg-[#1F1F1F] rounded-3xl justify-content-between px-3 mb-3 mx-2"
           style={{ height: "8vh" }}
         >
           <button
@@ -40,36 +40,48 @@ function LeaderBoard() {
 
         <div className="d-flex">
           {show && (
-            <div className="bg-dark m-3 text-white h4 d-flex flex-column rounded-3xl">
-              <div className="my-auto p-5" onClick={() => navigate("/learn")}>
+            <div className="bg-dark m-2 text-white h4 d-flex px-5 gap-12 flex-column rounded-3xl">
+              <div
+                className="nav-item py-2 mt-12 cursor-pointer w-fit"
+                onClick={() => navigate("/learn")}
+              >
                 Learn
               </div>
-              <div className="my-auto p-5" onClick={() => navigate("/order")}>
+              <div
+                className="nav-item py-2 cursor-pointer w-fit"
+                onClick={() => navigate("/order")}
+              >
                 Browse Print Stores
               </div>
               <div
-                className="my-auto p-5"
+                className="nav-item py-2 cursor-pointer w-fit"
                 onClick={() => navigate("/dashboard")}
               >
                 Dashboard
               </div>
               <div
-                className="my-auto p-5"
+                className="nav-item py-2 cursor-pointer w-fit"
                 onClick={() => navigate("/leaderboard")}
               >
                 Order History
               </div>
-              <div className="my-auto p-5" onClick={() => navigate("/reward")}>
+              <div
+                className="nav-item py-2 cursor-pointer w-fit"
+                onClick={() => navigate("/reward")}
+              >
                 Rewards
               </div>
-              <div className="my-auto p-5" onClick={() => navigate("/history")}>
-                Settings
+              <div
+                className="nav-item py-2 cursor-pointer w-fit"
+                onClick={() => navigate("/history")}
+              >
+                Pending Order Status
               </div>
             </div>
           )}
 
           <div
-            className="bg-dark w-100 p-5 m-3 rounded-3xl"
+            className="bg-[#1F1F1F] w-100 p-5 m-3 rounded-3xl"
             style={{ minHeight: "92vh" }}
           >
             <table
