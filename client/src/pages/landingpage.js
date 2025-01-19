@@ -23,7 +23,7 @@ function Landingpage() {
           <button className='btn text-white border rounded-xl m-3 py-0' disabled >Signup</button>
         </div>
         <div className='h3 align-self-center m-0 p-0'>
-          Climato
+          Printopher
         </div>
 
         <div>
@@ -41,10 +41,10 @@ function Landingpage() {
         ></section>
         <div className="text-white flex flex-col mt-9 tracking-thighter leading-7 absolute ml-9">
           <h1 className="text-4xl font-sans font-bold mb-4 relative ">
-            Climato knows there is no Plan<span className="text-slate-400">et</span> B
+            Printopher knows there is no Plan<span className="text-slate-400">et</span> B
           </h1>
           <p className="font-mono text-xl ">
-            Climato is here to redefine how you manage your e-waste and How you
+            Printopher is here to redefine how you manage your e-waste and How you
           </p>
           <p className="font-mono text-xl leading-9">can participate help our planet because, this is all that we’ve got.</p>
         </div>
@@ -98,7 +98,7 @@ function Landingpage() {
       </div>
 
       <div className='bg-dark rounded-3xl p-3 text-white d-flex justify-content-center flex-column px-4 py-4 my-4'>
-        <h1 className='h2 text-center'>Climato Recycler</h1>
+        <h1 className='h2 text-center'>Printopher Recycler</h1>
         <div className='d-flex justify-content-around my-4 w-75 mx-auto'>
           <div>Home</div>
           <div>About</div>

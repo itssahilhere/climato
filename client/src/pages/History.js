@@ -26,7 +26,7 @@ function History() {
                     </button>
 
                     <div className='h3 align-self-center m-0 p-0'>
-                        Climato
+                        Printopher
                     </div>
 
                     <div className='d-flex align-items-center'>

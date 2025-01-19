@@ -1,11 +1,10 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Login from "./pages/user/Login.js"
 import Signup from "./pages/user/Signup.js"
 import RSignIn from "./pages/recycler/RLogin.js"
 import RSignup from "./pages/recycler/RSignup.js"
 import Landingpage from "./pages/landingpage.js";
-import NavBar from "./component/navbar.js";
 import { Dashboard } from "./pages/dashboard.js";
 import Recycle from "./pages/user/Recycle.js";
 import LeaderBoard from "./pages/LeaderBoard.js";

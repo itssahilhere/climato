@@ -34,7 +34,7 @@ function Learning() {
                     </button>
 
                     <div className='h3 align-self-center m-0 p-0'>
-                        Climato
+                        Printopher
                     </div>
 
                     <div className='d-flex align-items-center'>
@@ -49,11 +49,11 @@ function Learning() {
                     {show && <div className='bg-dark m-3 text-white h4 d-flex flex-column rounded-3xl'>
 
                     <div className='my-auto p-5' onClick={() => navigate('/learn')}>Learn</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/order')}>Ecozones</div>
+                        <div className='my-auto p-5' onClick={() => navigate('/order')}>Browse Print Stores</div>
                         <div className='my-auto p-5' onClick={() => navigate('/dashboard')}>Dashboard</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/leaderboard')}>Leaderboards</div>
+                        <div className='my-auto p-5' onClick={() => navigate('/leaderboard')}>Order History</div>
                         <div className='my-auto p-5' onClick={() => navigate('/reward')}>Rewards</div>
-                        <div className='my-auto p-5' onClick={() => navigate('/history')}>Settings</div>
+                        <div className='my-auto p-5' onClick={() => navigate('/history')}>Pending Order Satus</div>
                     </div>}
 
                     <div className='bg-dark w-100 p-5 m-3 rounded-3xl d-flex flex-wrap' style={{ minHeight: "92vh" }}>

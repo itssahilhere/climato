@@ -42,7 +42,7 @@ function Reward() {
                             : <ArrowArcLeft size={50} />}
                     </button>
                     <div className='h3 align-self-center m-0 p-0'>
-                        Climato
+                        Printopher
                     </div>
                     <div className='d-flex align-items-center'>
                         <img src="https://img.freepik.com/premium-photo/cartoon-game-avatar-logo-gaming-brand_902820-467.jpg" width={50} className='rounded-circle' />
