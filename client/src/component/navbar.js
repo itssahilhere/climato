@@ -18,9 +18,8 @@ function NavBar() {
         <Link to="#" className="menu-bars">
           <List size={32}  onClick={showSidebar} />
         </Link>
-          <Link to="/">
-
-<h1 className="text-white font-mono flex-row flex text-3xl ml-96">Climato</h1>
+          <Link to="/landing">
+            <h1 className="text-white font-mono flex-row flex text-3xl ml-96">Printopher</h1>
           </Link>
           <div className="flex justify-between flex-row ml-96 mr-4 text-white text-xl">
 

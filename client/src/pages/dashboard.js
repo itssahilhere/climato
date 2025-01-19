@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./dashboard.css";
 import { ArrowArcLeft, ArrowUpRight } from "phosphor-react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import defaultProfilePic from "../assets/propic.png"; // Import your default profile picture
 //import { getCurrentPosition } from 'react-geolocation'; // Import the getCurrentPosition function from your geolocation library
 
@@ -55,13 +55,16 @@ export const Dashboard = () => {
       case error.UNKNOWN_ERROR:
         alert("An unknown error occurred.");
         break;
+      default:
+        alert("An unknown error occurred.");
+        break;
     }
   };
 
   useEffect(() => {
     // Call getLocation function when the component mounts
     getLocation();
-  }, []);
+  }, [getLocation]);
 
   return (
     <div className="d-flex dashboard">
@@ -77,6 +80,7 @@ export const Dashboard = () => {
             {!show ? (
               <img
                 src="https://cdn1.iconfinder.com/data/icons/heroicons-ui/24/menu-512.png"
+                alt="menu"
                 width={50}
               />
             ) : (
@@ -90,6 +94,7 @@ export const Dashboard = () => {
             <img
               src="https://img.freepik.com/premium-photo/cartoon-game-avatar-logo-gaming-brand_902820-467.jpg"
               width={50}
+              alt="profile"
               className="rounded-circle"
             />
           </div>
@@ -108,7 +113,7 @@ export const Dashboard = () => {
                 className="nav-item py-2 cursor-pointer w-fit"
                 onClick={() => navigate("/order")}
               >
-                Ecozones
+                Browse Print Stores
               </div>
               <div
                 className="nav-item py-2 cursor-pointer w-fit"
@@ -120,7 +125,7 @@ export const Dashboard = () => {
                 className="nav-item py-2 cursor-pointer w-fit"
                 onClick={() => navigate("/leaderboard")}
               >
-                Leaderboards
+                Order History
               </div>
               <div
                 className="nav-item py-2 cursor-pointer w-fit"
@@ -132,7 +137,7 @@ export const Dashboard = () => {
                 className="nav-item py-2 cursor-pointer w-fit"
                 onClick={() => navigate("/history")}
               >
-                Settings
+                Pending Order Status
               </div>
             </div>
           )}
@@ -161,7 +166,7 @@ export const Dashboard = () => {
               <div className="w-[100%] p-1.5 rounded-3xl">
                 <div
                   className="grid-item2 bg-[#1f1f1f] rounded-3xl p-2 cursor-pointer h-[40vh] flex flex-col justify-center items-center"
-                  onClick={handleClick1}
+                  onClick={handleClick3}
                 >
                   {/* <p className="flex items-center font-medium text-[2.5rem] absolute z-[5] px-6 py-2">
                     Leaderboards <ArrowUpRight size={50} />
@@ -196,7 +201,7 @@ export const Dashboard = () => {
                     >
                       <path d="M214.67,72H200V40a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8V72H41.33C27.36,72,16,82.77,16,96v80a8,8,0,0,0,8,8H56v32a8,8,0,0,0,8,8H192a8,8,0,0,0,8-8V184h32a8,8,0,0,0,8-8V96C240,82.77,228.64,72,214.67,72ZM72,48H184V72H72ZM184,208H72V160H184Zm40-40H200V152a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8v16H32V96c0-4.41,4.19-8,9.33-8H214.67c5.14,0,9.33,3.59,9.33,8Zm-24-52a12,12,0,1,1-12-12A12,12,0,0,1,200,116Z"></path>
                     </svg>
-                    <p>Print Now</p>
+                    <p className="text-black">Print Now</p>
                   </button>
                   <p className="info text-xs">Maximum upload size: 20MB</p>
                 </div>
@@ -207,7 +212,7 @@ export const Dashboard = () => {
               <div className="col-3 p-1.5 rounded-3xl">
                 <div
                   className="grid-item3 rounded-3xl cursor-pointer h-[44vh]"
-                  onClick={handleClick2}
+                  onClick={handleClick1}
                 >
                   <div className="leader font-medium text-[2.5rem] px-6 py-2 absolute z-[5]">
                     <h3 className="flex items-center gap-1">
