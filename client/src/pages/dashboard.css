@@ -2,7 +2,7 @@
   --primary-font-color: #faf3dd;
 }
 
-a {
+.dashboard a {
   position: relative;
   z-index: -4;
 }
