@@ -123,7 +123,7 @@ function Landingpage() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent to-black opacity-80 z-0"></div>
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent to-black z-0"></div>
 
         <div className="relative z-10">
           <p className="text-center text-5xl mb-4">Why Us?</p>
