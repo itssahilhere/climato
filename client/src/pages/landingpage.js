@@ -3,13 +3,13 @@ import "./landingpage.css"; // Import CSS file for styling
 import historyImage from "../assets/history.png";
 import aboutImage from "../assets/about.jpg";
 import whyUsImage from "../assets/why_us.jpg";
-import earth from "../assets/space.png";
-import fire from "../assets/fire2.jpeg";
-import colorful from "../assets/colorful.jpeg"; // Import CSS file for styling
-import leaf from "../assets/earth (3).png"; // Import CSS file for styling
-import desert from "../assets/earth.png"; // Import CSS file for styling
-import Card from "../component/card.js";
-import trash from "../assets/earth (4).png";
+// import earth from "../assets/space.png";
+// import fire from "../assets/fire2.jpeg";
+// import colorful from "../assets/colorful.jpeg"; // Import CSS file for styling
+// import leaf from "../assets/earth (3).png"; // Import CSS file for styling
+// import desert from "../assets/earth.png"; // Import CSS file for styling
+// import Card from "../component/card.js";
+// import trash from "../assets/earth (4).png";
 import Login from "./user/Login.js";
 import Signup from "./user/Signup.js";
 import { Link } from "react-router-dom";
@@ -35,7 +35,12 @@ function Landingpage() {
             Signup
           </button>
         </div> */}
-        <div className="h3 align-self-center m-0 p-0">Printopher</div>
+        <Link
+          to="/"
+          className="h3 align-self-center m-0 p-0 text-[#faf3dd] hover:text-inherit"
+        >
+          Printopher
+        </Link>
 
         <div className="flex items-center gap-4 text-lg">
           <Link to="/landing" className="">

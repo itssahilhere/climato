@@ -15,3 +15,7 @@ body {
   margin: 0 9rem;
   height: 100vh;
 }
+
+.chat-markdown * {
+  color: inherit !important;
+}
