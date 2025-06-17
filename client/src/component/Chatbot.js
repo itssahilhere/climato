@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import assistant from "../lib/gemini.js";
 import { PaperPlaneRight, X } from "@phosphor-icons/react";
+import logo from "../assets/printopher_logo.png";
+import about from "../assets/about.jpg";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { useLocation } from "react-router-dom";
@@ -153,8 +155,13 @@ const Chatbot = () => {
   return (
     <>
       <div
-        className="p-4 rounded-full relative cursor-pointer bg-red-500"
+        className="w-16 h-16 rounded-full relative cursor-pointer bg-no-repeat bg-[#faf3dd]"
         name="circle"
+        style={{
+          backgroundImage: `url(${logo})`,
+          backgroundSize: "50%",
+          backgroundPosition: "center",
+        }}
         onClick={() => setIsOpen((prev) => !prev)}
       ></div>
       {isOpen && (
@@ -167,7 +174,15 @@ const Chatbot = () => {
             className="w-full basis-[18%] bg-[#faf3dd] flex items-center gap-3 px-4"
             name="header"
           >
-            <div className="p-4 rounded-full bg-red-500" name="logo"></div>
+            <div
+              className="w-14 h-14 rounded-full bg-no-repeat"
+              name="logo"
+              style={{
+                backgroundImage: `url(${logo})`,
+                backgroundSize: "50%",
+                backgroundPosition: "center",
+              }}
+            ></div>
             <div className="text-black text-3xl" name="title">
               Printopher™
             </div>
