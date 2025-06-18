@@ -1,0 +1,442 @@
+{
+  "General Queries": [
+    {
+      "question": "What is this platform about?",
+      "answer": "It's a one-stop solution for all your printing needs. We connect you with nearby printing stores and help you schedule and manage orders."
+    },
+    {
+      "question": "How does this service work?",
+      "answer": "You simply select what you want to print, upload your file, choose a nearby store, and schedule a pickup or delivery."
+    },
+    {
+      "question": "Is this service free?",
+      "answer": "Our platform is free to use. You only pay for the printing services provided by the store."
+    },
+    {
+      "question": "Do I need to sign up to place an order?",
+      "answer": "Yes, signing up helps us offer a personalized experience and keep track of your orders."
+    },
+    {
+      "question": "Where are your partner stores located?",
+      "answer": "Our AI maps stores near your location and ranks them based on quality, speed, and pricing."
+    }
+  ],
+  "AI & Store Recommendation": [
+    {
+      "question": "How does your platform choose stores for me?",
+      "answer": "We use AI algorithms based on distance, user reviews, turnaround time, pricing, and specialty."
+    },
+    {
+      "question": "Can I manually select a printing store?",
+      "answer": "Yes, you can override the recommendations and select any partner store from the list."
+    },
+    {
+      "question": "Can I favorite stores I like?",
+      "answer": "Absolutely! You can mark any store as a favorite for faster future bookings."
+    },
+    {
+      "question": "How is store reliability measured?",
+      "answer": "Based on customer feedback, order completion rate, and quality consistency."
+    },
+    {
+      "question": "What if I’m not happy with the AI recommendation?",
+      "answer": "You can always view the full list and sort/filter stores manually."
+    }
+  ],
+  "Printing Options": [
+    {
+      "question": "What can I print here?",
+      "answer": "We support documents, photos, posters, brochures, ID cards, banners, and more."
+    },
+    {
+      "question": "Do you support color and black & white printing?",
+      "answer": "Yes, both options are available depending on the store's capabilities."
+    },
+    {
+      "question": "Can I print double-sided?",
+      "answer": "Yes, just enable the double-sided option while placing the order."
+    },
+    {
+      "question": "Can I print legal documents?",
+      "answer": "Yes, but we recommend reviewing store terms before printing sensitive materials."
+    },
+    {
+      "question": "Do you offer bulk printing?",
+      "answer": "Yes, many stores offer discounts for bulk orders."
+    }
+  ],
+  "File Upload & Formats": [
+    {
+      "question": "What file types are supported?",
+      "answer": "PDF, DOCX, PPT, PNG, JPEG, and TIFF are supported."
+    },
+    {
+      "question": "Is there a file size limit?",
+      "answer": "Yes, each file can be up to 100MB. For larger files, contact support."
+    },
+    {
+      "question": "Can I upload multiple files?",
+      "answer": "Yes, you can upload multiple documents in a single order."
+    },
+    {
+      "question": "Is my file safe?",
+      "answer": "Yes, we use encryption and delete files automatically after order completion."
+    },
+    {
+      "question": "Can I preview the print before confirming?",
+      "answer": "Yes, you’ll get a preview screen before payment."
+    }
+  ],
+  "Order Scheduling": [
+    {
+      "question": "How do I schedule my order?",
+      "answer": "After selecting the store and printing preferences, you can choose a preferred pickup or delivery time."
+    },
+    {
+      "question": "Can I reschedule an order?",
+      "answer": "Yes, up until the store confirms the order for printing."
+    },
+    {
+      "question": "How long does it take for an order to complete?",
+      "answer": "It depends on store load and document type—typically within a few hours."
+    },
+    {
+      "question": "Can I place recurring orders?",
+      "answer": "Yes, you can automate orders on a weekly or monthly basis."
+    },
+    {
+      "question": "Will I get reminders?",
+      "answer": "Yes, we'll notify you when your order is ready or delayed."
+    }
+  ],
+  "Pricing & Payments": [
+    {
+      "question": "How much does printing cost?",
+      "answer": "Prices vary by store, document type, paper quality, and color."
+    },
+    {
+      "question": "Is there a price estimator?",
+      "answer": "Yes, once you upload the file and choose preferences, you'll see an estimated price."
+    },
+    {
+      "question": "How do I pay?",
+      "answer": "Through UPI, credit/debit card, or store-specific payment links."
+    },
+    {
+      "question": "Is COD available?",
+      "answer": "For some stores, yes. You'll see the option during checkout."
+    },
+    {
+      "question": "Can I get an invoice?",
+      "answer": "Yes, downloadable invoices are available after payment."
+    }
+  ],
+  "Delivery & Pickup": [
+    {
+      "question": "Do you deliver?",
+      "answer": "Some stores offer delivery; you'll see it listed if available."
+    },
+    {
+      "question": "Can I track delivery?",
+      "answer": "Yes, tracking details will be shared via SMS/email."
+    },
+    {
+      "question": "What if I miss my delivery?",
+      "answer": "The delivery agent will attempt again or you'll be asked to reschedule."
+    },
+    {
+      "question": "Can I choose pickup instead of delivery?",
+      "answer": "Absolutely! You can select a preferred pickup slot at the store."
+    },
+    {
+      "question": "Are there delivery charges?",
+      "answer": "Delivery charges depend on distance and are shown at checkout."
+    }
+  ],
+  "Order Management": [
+    {
+      "question": "How do I track my order?",
+      "answer": "Go to “My Orders” and select your order for real-time updates."
+    },
+    {
+      "question": "Can I cancel my order?",
+      "answer": "Yes, before printing begins. Post-printing, cancellation isn’t allowed."
+    },
+    {
+      "question": "What if my order is incorrect?",
+      "answer": "Contact us via the chatbot or raise a dispute in the order panel."
+    },
+    {
+      "question": "Can I reorder the same item?",
+      "answer": "Yes, from your order history, click “Reorder.”"
+    },
+    {
+      "question": "How long is order history saved?",
+      "answer": "All your past orders are saved for 6 months."
+    }
+  ],
+  "User Account": [
+    {
+      "question": "How do I create an account?",
+      "answer": "You can sign up with email or mobile number."
+    },
+    {
+      "question": "How can I update my details?",
+      "answer": "Go to your profile and click “Edit Profile.”"
+    },
+    {
+      "question": "Can I delete my account?",
+      "answer": "Yes, under settings → delete account."
+    },
+    {
+      "question": "I forgot my password. What do I do?",
+      "answer": "Use the “Forgot Password” option on the login screen."
+    },
+    {
+      "question": "Can I login from multiple devices?",
+      "answer": "Yes, your account is synced across devices."
+    }
+  ],
+  "Chatbot Help": [
+    {
+      "question": "What can this chatbot do?",
+      "answer": "I can help you place orders, track them, answer queries, and escalate issues."
+    },
+    {
+      "question": "Can I talk to a human agent?",
+      "answer": "Yes, just type “human support” to connect."
+    },
+    {
+      "question": "Are you available 24/7?",
+      "answer": "Yes, the chatbot is available anytime."
+    },
+    {
+      "question": "Can I get order updates here?",
+      "answer": "Yes, just ask “What’s the status of my order?”"
+    },
+    {
+      "question": "Can I upload documents here?",
+      "answer": "Yes, click the upload button in this chat to get started."
+    }
+  ],
+  "Order Customization": [
+    {
+      "question": "Can I choose paper quality?",
+      "answer": "Yes, you can choose from standard, premium, matte, or glossy."
+    },
+    {
+      "question": "Can I print with binding?",
+      "answer": "Yes, binding options like spiral, staple, or hardcover are available."
+    },
+    {
+      "question": "Do you offer laminations?",
+      "answer": "Yes, stores that support lamination will show it as an option."
+    },
+    {
+      "question": "Can I choose the number of copies?",
+      "answer": "Yes, you can select the quantity before placing the order."
+    },
+    {
+      "question": "Can I print in landscape mode?",
+      "answer": "Yes, choose the page orientation during upload."
+    }
+  ],
+  "Educational Printing": [
+    {
+      "question": "Can I print assignments?",
+      "answer": "Yes, just upload your document and select your preferences."
+    },
+    {
+      "question": "Do you offer thesis printing?",
+      "answer": "Yes, many stores offer binding and thesis format services."
+    },
+    {
+      "question": "Are there student discounts?",
+      "answer": "Some stores offer student discounts—look for the tag or filter."
+    },
+    {
+      "question": "Can I print exam papers confidentially?",
+      "answer": "Yes, choose a store with a confidentiality tag."
+    },
+    {
+      "question": "Can I print class notes in bulk?",
+      "answer": "Yes, and you can even schedule it as a recurring order."
+    }
+  ],
+  "Business & Corporate Printing": [
+    {
+      "question": "Can I print business cards?",
+      "answer": "Yes, upload your design or choose from available templates."
+    },
+    {
+      "question": "Do you print brochures?",
+      "answer": "Yes, tri-fold, bi-fold, and other formats are supported."
+    },
+    {
+      "question": "Can I print ID cards for my team?",
+      "answer": "Yes, you can upload a CSV and our partners will generate them."
+    },
+    {
+      "question": "Do you print invoices or letterheads?",
+      "answer": "Yes, upload your design or get one made through our design add-on."
+    },
+    {
+      "question": "Can I place bulk orders for my office?",
+      "answer": "Yes, and you can even get special rates through our corporate plans."
+    }
+  ],
+  "Creative Printing": [
+    {
+      "question": "Can I print posters and wall art?",
+      "answer": "Yes, you can choose size and paper finish while placing the order."
+    },
+    {
+      "question": "Do you print photo books?",
+      "answer": "Yes, select the layout and upload your photos for a photo album."
+    },
+    {
+      "question": "Can I print wedding invites or cards?",
+      "answer": "Yes, you can upload a design or get it custom-designed."
+    },
+    {
+      "question": "Do you offer T-shirt or merchandise printing?",
+      "answer": "Some stores offer fabric and merchandise printing—use the filter to find them."
+    },
+    {
+      "question": "Can I print banners or standees?",
+      "answer": "Yes, we support wide-format printing."
+    }
+  ],
+  "Technical Troubleshooting": [
+    {
+      "question": "My file isn't uploading. What do I do?",
+      "answer": "Check the format and file size. If the problem persists, try another browser or device."
+    },
+    {
+      "question": "My document preview is wrong.",
+      "answer": "Please re-upload the file or convert it to PDF for best results."
+    },
+    {
+      "question": "Payment failed—what now?",
+      "answer": "Try again or check with your bank. If money was deducted, it will be auto-refunded."
+    },
+    {
+      "question": "The site isn’t loading properly.",
+      "answer": "Clear cache or switch to a different browser."
+    },
+    {
+      "question": "My file printed with errors.",
+      "answer": "Raise a quality concern from your order dashboard for resolution."
+    }
+  ],
+  "Promotions & Offers": [
+    {
+      "question": "Are there any coupons or offers?",
+      "answer": "Yes, check the “Offers” tab or ask “show me current discounts.”"
+    },
+    {
+      "question": "Can I refer friends?",
+      "answer": "Yes, use your referral link to invite friends and earn credits."
+    },
+    {
+      "question": "Do you have a loyalty program?",
+      "answer": "Yes, you earn points for every order that can be redeemed later."
+    },
+    {
+      "question": "How can I apply a coupon?",
+      "answer": "Enter the coupon code at checkout before payment."
+    },
+    {
+      "question": "Where can I see my reward points?",
+      "answer": "Check your profile under “Rewards & Wallet.”"
+    }
+  ],
+  "Analytics & Business Insights": [
+    {
+      "question": "How can I partner my store with you?",
+      "answer": "Fill out the partner form and our team will contact you."
+    },
+    {
+      "question": "Will I get customer insights?",
+      "answer": "Yes, partners get a dashboard with order stats and reviews."
+    },
+    {
+      "question": "Can I set my own pricing?",
+      "answer": "Yes, store partners control pricing and services offered."
+    },
+    {
+      "question": "Can I disable services temporarily?",
+      "answer": "Yes, use the “Pause store” option in your dashboard."
+    },
+    {
+      "question": "Can I customize delivery areas?",
+      "answer": "Yes, define your delivery radius and charges."
+    }
+  ],
+  "Security & Privacy": [
+    {
+      "question": "Are my documents private?",
+      "answer": "Yes, all uploads are encrypted and auto-deleted post order."
+    },
+    {
+      "question": "Who has access to my files?",
+      "answer": "Only the selected store you place the order with."
+    },
+    {
+      "question": "Can I delete files manually?",
+      "answer": "Yes, from your order dashboard → file section."
+    },
+    {
+      "question": "Is my payment info saved?",
+      "answer": "No, we use secure third-party payment gateways and don’t store your card details."
+    },
+    {
+      "question": "What happens if a store misuses my data?",
+      "answer": "We have strict partner policies. Report the issue immediately."
+    }
+  ],
+  "Feedback & Support": [
+    {
+      "question": "How can I give feedback?",
+      "answer": "After your order, you’ll get a prompt to rate the service."
+    },
+    {
+      "question": "How do I report a store?",
+      "answer": "Go to the store profile and click “Report” or message “report store” here."
+    },
+    {
+      "question": "My issue is unresolved. What now?",
+      "answer": "Type “Escalate” to transfer your case to a senior support agent."
+    },
+    {
+      "question": "Can I suggest a feature?",
+      "answer": "We’d love that! Use the “Suggest a Feature” form in the menu."
+    },
+    {
+      "question": "How do I reach customer support?",
+      "answer": "Type “talk to support” or email us at support@[yourdomain].com."
+    }
+  ],
+  "Miscellaneous / Smart Features": [
+    {
+      "question": "Do you support voice commands?",
+      "answer": "Yes, on mobile you can place voice-enabled orders using our app."
+    },
+    {
+      "question": "Can I get notifications via WhatsApp?",
+      "answer": "Yes, just enable WhatsApp updates in settings."
+    },
+    {
+      "question": "Is there a mobile app?",
+      "answer": "Yes, available on both iOS and Android."
+    },
+    {
+      "question": "Can I schedule printing for future dates?",
+      "answer": "Yes, select a future date/time during the order process."
+    },
+    {
+      "question": "Can I use this platform for event or wedding printing needs?",
+      "answer": "Yes, we support bulk, premium, and custom wedding/event printing solutions."
+    }
+  ]
+}

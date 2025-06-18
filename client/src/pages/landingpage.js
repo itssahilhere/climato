@@ -3,13 +3,13 @@ import "./landingpage.css"; // Import CSS file for styling
 import historyImage from "../assets/history.png";
 import aboutImage from "../assets/about.jpg";
 import whyUsImage from "../assets/why_us.jpg";
-import earth from "../assets/space.png";
-import fire from "../assets/fire2.jpeg";
-import colorful from "../assets/colorful.jpeg"; // Import CSS file for styling
-import leaf from "../assets/earth (3).png"; // Import CSS file for styling
-import desert from "../assets/earth.png"; // Import CSS file for styling
-import Card from "../component/card.js";
-import trash from "../assets/earth (4).png";
+// import earth from "../assets/space.png";
+// import fire from "../assets/fire2.jpeg";
+// import colorful from "../assets/colorful.jpeg"; // Import CSS file for styling
+// import leaf from "../assets/earth (3).png"; // Import CSS file for styling
+// import desert from "../assets/earth.png"; // Import CSS file for styling
+// import Card from "../component/card.js";
+// import trash from "../assets/earth (4).png";
 import Login from "./user/Login.js";
 import Signup from "./user/Signup.js";
 import { Link } from "react-router-dom";
@@ -35,7 +35,12 @@ function Landingpage() {
             Signup
           </button>
         </div> */}
-        <div className="h3 align-self-center m-0 p-0">Printopher</div>
+        <Link
+          to="/"
+          className="h3 align-self-center m-0 p-0 text-[#faf3dd] hover:text-inherit"
+        >
+          Printopher
+        </Link>
 
         <div className="flex items-center gap-4 text-lg">
           <Link to="/landing" className="">
@@ -98,7 +103,7 @@ function Landingpage() {
             backgroundPosition: "-360px -40px", // X Y offsets
           }}
         >
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent to-black opacity-80 z-0"></div>
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent to-black opacity-100 z-0"></div>
           <p className="text-5xl absolute bottom-10 left-8 z-10">About Us</p>
         </div>
         <div className="w-1/2 h-full bg-[#1F1F1F] rounded-3xl flex justify-center items-center">
@@ -163,88 +168,6 @@ function Landingpage() {
           </Link>
         </div>
       </div>
-
-      {/* <div className="text-white h-full flex my-3">
-        <section
-          className="w-screen  bg-center bg-cover bg-no-repeat   h-96  rounded-3xl  relative "
-          style={{
-            backgroundImage: `url(${earth})`,
-          }}
-        ></section>
-        <div className="text-white flex flex-col mt-9 tracking-thighter leading-7 absolute ml-9">
-          <h1 className="text-4xl font-sans font-bold mb-4 relative ">
-            Printopher knows there is no Plan
-            <span className="text-slate-400">et</span> B
-          </h1>
-          <p className="font-mono text-xl ">
-            Printopher is here to redefine how you manage your e-waste and How
-            you
-          </p>
-          <p className="font-mono text-xl leading-9">
-            can participate help our planet because, this is all that we’ve got.
-          </p>
-        </div>
-      </div>
-
-      <div className="text-white h-full flex pt-0 w-full rounded-3xl my-3">
-        <section
-          className="w-full   bg-center bg-cover bg-no-repeat  h-96  rounded-3xl relative rigth-10"
-          style={{
-            backgroundImage: `url(${fire})`,
-          }}
-        ></section>
-        <div className="text-white flex flex-col mt-9 tracking-thighter leading-7 absolute ml-5">
-          <h1 className="text-4xl font-sans font-bold mb-4">
-            Let’s Check your EcoScore
-          </h1>
-          <p className="font-mono leading-9 text-xl">
-            Track how much E-waste you produce or might produce and we will
-          </p>
-          <p className="font-mono leading-10 text-xl">help you to reduce it</p>
-        </div>
-      </div>
-
-      <div className="d-flex w-100">
-        <Card
-          read={"Our Mission"}
-          image={trash}
-          description={"Discover our driving force to save this planet."}
-        />
-        <Card
-          read={"Rewards"}
-          image={colorful}
-          description={"Know How you can earn while helping the planet. "}
-        />
-        <Card
-          read={"How it Works"}
-          image={leaf}
-          description={"Know what is Cliamto and why should you care."}
-        />
-        <Card
-          read={"About Us"}
-          image={desert}
-          description={" Get in touch and know the the Team."}
-        />
-      </div>
-
-      <div className="bg-[#1F1F1F] rounded-3xl p-3 text-white d-flex justify-content-center flex-column px-4 py-4 my-3">
-        <h1 className="h2 text-center">Are you a recycler?</h1>
-        <button className="w-25 mx-auto border p-3 m-3 bg-white text-dark rounded-3xl h3 py-2">
-          Follow Link
-        </button>
-      </div>
-
-      <div className="bg-[#1F1F1F] rounded-3xl p-3 text-white d-flex justify-content-center flex-column px-4 py-4 my-4">
-        <h1 className="h2 text-center">Printopher Recycler</h1>
-        <div className="d-flex justify-content-around my-4 w-75 mx-auto">
-          <div>Home</div>
-          <div>About</div>
-          <div>Services</div>
-          <div>Contact Us</div>
-        </div>
-        <hr className="w-75 mx-auto my-3" />
-        <p className="mx-auto">Copyright &emsp; Ctrl &emsp; Shift</p>
-      </div> */}
     </div>
   );
 }

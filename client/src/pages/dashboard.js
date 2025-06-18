@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./dashboard.css";
 import { ArrowArcLeft, ArrowUpRight } from "phosphor-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import defaultProfilePic from "../assets/propic.png"; // Import your default profile picture
 //import { getCurrentPosition } from 'react-geolocation'; // Import the getCurrentPosition function from your geolocation library
 
@@ -88,7 +88,12 @@ export const Dashboard = () => {
             )}
           </button>
 
-          <div className="h3 align-self-center m-0 p-0">Printopher</div>
+          <Link
+            to="/"
+            className="h3 align-self-center m-0 p-0 !z-10 hover:text-[#faf3dd]"
+          >
+            Printopher
+          </Link>
 
           <div className="d-flex align-items-center">
             <img
